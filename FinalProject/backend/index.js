@@ -78,7 +78,7 @@ app.delete("/users/:id", async (req, res) => {
     await client.connect();
     const query = {"user_id": id};
     const results = await db.collection("Users").deleteOne(query);
-    console.log("User " + id + ": has been Deleted")
+    console.log("User " + id + ": has been Deleted");
     res.status(200);
     res.send(results);
     } catch(error){
@@ -89,27 +89,32 @@ app.delete("/users/:id", async (req, res) => {
 
   // UPDATE User by ID //
   app.put("/users/:id", async (req, res) => {
-    
-    const id = Number(req.params.id);
-    await client.connect();
-    const query = {"user_id": id};
-    const newPhonenumber = parseInt(req.body.phone_number);
-    const updatedUser = {
-        "user_id": id,
-        "first_name": req.body.first_name,
-        "last_name": req.body.last_name,
-        "password": req.body.password,
-        "phone_number": newPhonenumber,
-        "email": req.body.email
-      };
-      console.log(updatedUser);
-    const results = await db.collection("Users").updateOne(query, 
-    {
-      $set: {user_id:updatedUser.user_id , first_name:updatedUser.first_name, last_name:updatedUser.last_name, password:updatedUser.password, phone_number:updatedUser.phone_number, email:updatedUser.email}
-    });
-    res.status(200);
-    res.send(results);
+    try{
+        const id = Number(req.params.id);
+        await client.connect();
+        const query = {"user_id": id};
+        const newPhonenumber = parseInt(req.body.phone_number);
+        const updatedUser = {
+            "user_id": id,
+            "first_name": req.body.first_name,
+            "last_name": req.body.last_name,
+            "password": req.body.password,
+            "phone_number": newPhonenumber,
+            "email": req.body.email
+        };
+        console.log(updatedUser);
+        const results = await db.collection("Users").updateOne(query, 
+        {
+            $set: {user_id:updatedUser.user_id , first_name:updatedUser.first_name, last_name:updatedUser.last_name, password:updatedUser.password, phone_number:updatedUser.phone_number, email:updatedUser.email}
+        });
+        res.status(200);
+        res.send(results);
+    }catch{
+        console.error("An error occurred:", error);
+        res.status(500).send({ error: 'An internal server error occurred' });  
+    }
   });
+
 
 // LIVESTOCK BACKEND //
 
@@ -162,6 +167,7 @@ app.get("/livestock/species/:species", async (req, res) => {
     if (!results) res.send("Animals Not Found").status(404);
     else res.send(results).status(200);
 });
+
 // GET All Species of one User_ID //
 app.get("/livestock/userspecies/:id/:species", async (req, res) => {
     const userid = Number(req.params.id);
@@ -176,15 +182,92 @@ app.get("/livestock/userspecies/:id/:species", async (req, res) => {
     else res.send(results).status(200);
 });
 
+// CREATE new Livestock in Database //
+app.post("/livestock", async (req, res) => {
+    try{
+    await client.connect();
+    const values = Object.values(req.body);
+    const newAnimalId = parseInt(req.body.animal_id);
+    const newUserId = parseInt(req.body.user_id);
+    const newPrice = parseFloat(req.body.price);
+    const newSold = false;
+    const newLivestock = {
+        "animal_id": newAnimalId,
+        "name":req.body.name,
+        "species":req.body.species,
+        "user_id": req.body.user_id,
+        "description":req.body.description,
+        "price":newPrice,
+        "sold": newSold,
+        "image":req.body.image
+      };
+      console.log(newLivestock);
+      const results = await db.collection("Livestock").insertOne(newLivestock);
+      res.status(200);
+      res.send(results);
+    } catch(error){
+      console.error("An error occurred:", error);
+      res.status(500).send({ error: 'An internal server error occurred' });
+    }
+  });
 
-
-
-app.delete("/deleteItem/:id", async (req, res) => {
-  const id = Number(req.params.id);
-  await client.connect();
-  const query = {"id": id};
-  const results = await db.collection("fakestore_catalog").deleteOne(query);
-  res.status(200);
-  res.send(results);
+// DELETE Livestock in Database by ID //
+app.delete("/livestock/:id", async (req, res) => {
+  try{
+    const id = Number(req.params.id);
+    await client.connect();
+    const query = {"animal_id": id};
+    const results = await db.collection("Livestock").deleteOne(query);
+    console.log("Livestock " + id + ": has been Deleted");
+    res.status(200);
+    res.send(results);
+  }catch(error){
+    console.error("An error occurred:", error);
+    res.status(500).send({ error: 'An internal server error occurred' });  
+  }
 });
+
+// UPDATE Livestock by ID //
+app.put("/livestock/:id", async (req, res) => {
+    try{
+        const id = Number(req.params.id);
+        await client.connect();
+        const query = {"animal_id": id};
+        const values = Object.values(req.body);
+        const newAnimalId = parseInt(req.body.animal_id);
+        const newUserId = parseInt(req.body.user_id);
+        const newPrice = parseFloat(req.body.price);
+        const newSold = req.body.sold === "true";
+
+        const updatedLS = {
+            "animal_id": newAnimalId,
+            "name":req.body.name,
+            "species":req.body.species,
+            "user_id": req.body.user_id,
+            "description":req.body.description,
+            "price":newPrice,
+            "sold": newSold,
+            "image":req.body.image
+          };
+        console.log(updatedLS);
+        const results = await db.collection("Livestock").updateOne(query, 
+        {
+            $set: {
+                animal_id:updatedLS.animal_id , 
+                name:updatedLS.name, 
+                species:updatedLS.species, 
+                user_id:updatedLS.user_id, 
+                description:updatedLS.description, 
+                price:updatedLS.price,
+                sold:updatedLS.sold, 
+                image:updatedLS.image
+            }
+        });
+        res.status(200);
+        res.send(results);
+    }catch{
+        console.error("An error occurred:", error);
+        res.status(500).send({ error: 'An internal server error occurred' });  
+    }
+  });
 
