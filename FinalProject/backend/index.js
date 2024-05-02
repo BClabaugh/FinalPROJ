@@ -22,6 +22,7 @@ const db = client.db(dbName);
 
 // USER BACKEND //
 
+// GET ALL Users in Database //
 app.get("/users", async (req, res) => {
   await client.connect();
   console.log("Node connected successfully to GET MongoDB");
@@ -32,6 +33,7 @@ app.get("/users", async (req, res) => {
   res.send(results);
 });
 
+// GET Users in Database By ID //
 app.get("/users/:id", async (req, res) => {
   const userid = Number(req.params.id);
   console.log("User to find :", userid);
@@ -44,6 +46,7 @@ app.get("/users/:id", async (req, res) => {
   else res.send(results).status(200);
 });
 
+// CREATE new Users in Database //
 app.post("/users", async (req, res) => {
     try{
     await client.connect();
@@ -64,8 +67,48 @@ app.post("/users", async (req, res) => {
       res.send(results);
     } catch(error){
       console.error("An error occurred:", error);
-  res.status(500).send({ error: 'An internal server error occurred' });
+      res.status(500).send({ error: 'An internal server error occurred' });
     }
+  });
+
+// DELETE User by ID //
+app.delete("/users/:id", async (req, res) => {
+    try{
+    const id = Number(req.params.id);
+    await client.connect();
+    const query = {"user_id": id};
+    const results = await db.collection("Users").deleteOne(query);
+    console.log("User " + id + ": has been Deleted")
+    res.status(200);
+    res.send(results);
+    } catch(error){
+        console.error("An error occurred:", error);
+        res.status(500).send({ error: 'An internal server error occurred' });  
+    }
+  });
+
+  // UPDATE User by ID //
+  app.put("/users/:id", async (req, res) => {
+    
+    const id = Number(req.params.id);
+    await client.connect();
+    const query = {"user_id": id};
+    const newPhonenumber = parseInt(req.body.phone_number);
+    const updatedUser = {
+        "user_id": id,
+        "first_name": req.body.first_name,
+        "last_name": req.body.last_name,
+        "password": req.body.password,
+        "phone_number": newPhonenumber,
+        "email": req.body.email
+      };
+      console.log(updatedUser);
+    const results = await db.collection("Users").updateOne(query, 
+    {
+      $set: {user_id:updatedUser.user_id , first_name:updatedUser.first_name, last_name:updatedUser.last_name, password:updatedUser.password, phone_number:updatedUser.phone_number, email:updatedUser.email}
+    });
+    res.status(200);
+    res.send(results);
   });
 
 // LIVESTOCK BACKEND //
@@ -145,29 +188,3 @@ app.delete("/deleteItem/:id", async (req, res) => {
   res.send(results);
 });
 
-app.put("/updateItem/:id", async (req, res) => {
-  console.log("In the backend");
-  const id = Number(req.params.id);
-  await client.connect();
-  const query = {"id": id};
-  const newId = parseInt(req.body.id);
-  const newDocument = {
-    "id": newId,
-    "title": req.body.title,
-    "price": req.body.price,
-    "description": req.body.description,
-    "category": req.body.category,
-    "image": req.body.image,
-    "rating": { 
-      "rate": req.body.rating.rate , 
-      "count": req.body.rating.count  
-    }
-    };
-    console.log(newDocument);
-  const results = await db.collection("fakestore_catalog").updateOne(query, 
-  {
-    $set: {id:newDocument.id , title:newDocument.title, price:newDocument.price, description:newDocument.description, category:newDocument.category, image:newDocument.image, "rating.rate": newDocument.rating.rate,"rating.count": newDocument.rating.count}
-  });
-  res.status(200);
-  res.send(results);
-});
