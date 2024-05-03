@@ -1,0 +1,260 @@
+[{
+  "_id": {
+    "$oid": "6633e69ed50486da592bbe4b"
+  },
+  "animal_id": 1,
+  "name": "Fluffy",
+  "species": "sheep",
+  "user_id": 1,
+  "description": "Fluffy is a friendly sheep with soft wool.",
+  "price": 50.01,
+  "sold": false,
+  "image": "https://example.com/fluffy.jpg"
+},
+{
+  "_id": {
+    "$oid": "6633e6a2d50486da592bbe4c"
+  },
+  "animal_id": 2,
+  "name": "Bacon",
+  "species": "pig",
+  "user_id": 2,
+  "description": "Bacon is a chubby pig who loves to roll in the mud.",
+  "price": 70.5,
+  "sold": false,
+  "image": "https://example.com/bacon.jpg"
+},
+{
+  "_id": {
+    "$oid": "6633e6a7d50486da592bbe4d"
+  },
+  "animal_id": 3,
+  "name": "Milkshake",
+  "species": "cow",
+  "user_id": 3,
+  "description": "Milkshake is a gentle cow with beautiful black and white patches.",
+  "price": 100.25,
+  "sold": false,
+  "image": "https://example.com/milkshake.jpg"
+},
+{
+  "_id": {
+    "$oid": "6633e6acd50486da592bbe4e"
+  },
+  "animal_id": 4,
+  "name": "Cluckers",
+  "species": "chicken",
+  "user_id": 4,
+  "description": "Cluckers is a lively chicken who lays delicious eggs every morning.",
+  "price": 20.99,
+  "sold": false,
+  "image": "https://example.com/cluckers.jpg"
+},
+{
+  "_id": {
+    "$oid": "6633e6b1d50486da592bbe4f"
+  },
+  "animal_id": 5,
+  "name": "Wooly",
+  "species": "sheep",
+  "user_id": 1,
+  "description": "Wooly is a fluffy sheep with a gentle disposition.",
+  "price": 55.75,
+  "sold": false,
+  "image": "https://example.com/wooly.jpg"
+},
+{
+  "_id": {
+    "$oid": "6633e6b6d50486da592bbe50"
+  },
+  "animal_id": 6,
+  "name": "Porky",
+  "species": "pig",
+  "user_id": 2,
+  "description": "Porky is a playful pig who loves belly rubs.",
+  "price": 65.99,
+  "sold": false,
+  "image": "https://example.com/porky.jpg"
+},
+{
+  "_id": {
+    "$oid": "6633e6bbd50486da592bbe51"
+  },
+  "animal_id": 7,
+  "name": "MooMoo",
+  "species": "cow",
+  "user_id": 3,
+  "description": "MooMoo is a curious cow who enjoys exploring the pasture.",
+  "price": 90,
+  "sold": false,
+  "image": "https://example.com/moomoo.jpg"
+},
+{
+  "_id": {
+    "$oid": "6633e6c0d50486da592bbe52"
+  },
+  "animal_id": 8,
+  "name": "Eggbert",
+  "species": "chicken",
+  "user_id": 4,
+  "description": "Eggbert is a proud rooster who crows at sunrise.",
+  "price": 15.5,
+  "sold": false,
+  "image": "https://example.com/eggbert.jpg"
+},
+{
+  "_id": {
+    "$oid": "6633e6c5d50486da592bbe53"
+  },
+  "animal_id": 9,
+  "name": "Snowball",
+  "species": "sheep",
+  "user_id": 1,
+  "description": "Snowball is a white sheep who loves frolicking in the snow.",
+  "price": 60.25,
+  "sold": false,
+  "image": "https://example.com/snowball.jpg"
+},
+{
+  "_id": {
+    "$oid": "6633e6cad50486da592bbe54"
+  },
+  "animal_id": 10,
+  "name": "Hamlet",
+  "species": "pig",
+  "user_id": 2,
+  "description": "Hamlet is a clever pig who enjoys solving puzzles.",
+  "price": 75.75,
+  "sold": false,
+  "image": "https://example.com/hamlet.jpg"
+},
+{
+  "_id": {
+    "$oid": "6633e6cfd50486da592bbe55"
+  },
+  "animal_id": 11,
+  "name": "Buttercup",
+  "species": "cow",
+  "user_id": 3,
+  "description": "Buttercup is a gentle cow who loves being brushed.",
+  "price": 110,
+  "sold": false,
+  "image": "https://example.com/buttercup.jpg"
+},
+{
+  "_id": {
+    "$oid": "6633e6d4d50486da592bbe56"
+  },
+  "animal_id": 12,
+  "name": "Peepers",
+  "species": "chicken",
+  "user_id": 4,
+  "description": "Peepers is a small chicken with a big personality.",
+  "price": 18.75,
+  "sold": false,
+  "image": "https://example.com/peepers.jpg"
+},
+{
+  "_id": {
+    "$oid": "6633e6d9d50486da592bbe57"
+  },
+  "animal_id": 13,
+  "name": "Cotton",
+  "species": "sheep",
+  "user_id": 1,
+  "description": "Cotton is a fluffy sheep who loves cuddles.",
+  "price": 45.5,
+  "sold": false,
+  "image": "https://example.com/cotton.jpg"
+},
+{
+  "_id": {
+    "$oid": "6633e6ded50486da592bbe58"
+  },
+  "animal_id": 14,
+  "name": "Sizzle",
+  "species": "pig",
+  "user_id": 2,
+  "description": "Sizzle is a sassy pig with a fiery personality.",
+  "price": 80.25,
+  "sold": false,
+  "image": "https://example.com/sizzle.jpg"
+},
+{
+  "_id": {
+    "$oid": "6633e6e3d50486da592bbe59"
+  },
+  "animal_id": 15,
+  "name": "Daisy",
+  "species": "cow",
+  "user_id": 3,
+  "description": "Daisy is a sweet cow who loves eating daisies.",
+  "price": 95.5,
+  "sold": false,
+  "image": "https://example.com/daisy.jpg"
+},
+{
+  "_id": {
+    "$oid": "6633e6e8d50486da592bbe5a"
+  },
+  "animal_id": 16,
+  "name": "Nugget",
+  "species": "chicken",
+  "user_id": 4,
+  "description": "Nugget is a plump chicken who enjoys sunbathing.",
+  "price": 23.99,
+  "sold": false,
+  "image": "https://example.com/nugget.jpg"
+},
+{
+  "_id": {
+    "$oid": "6633e6edd50486da592bbe5b"
+  },
+  "animal_id": 17,
+  "name": "Fleece",
+  "species": "sheep",
+  "user_id": 1,
+  "description": "Fleece is a wooly sheep with a mischievous streak.",
+  "price": 48.75,
+  "sold": false,
+  "image": "https://example.com/fleece.jpg"
+},
+{
+  "_id": {
+    "$oid": "6633e6f2d50486da592bbe5c"
+  },
+  "animal_id": 18,
+  "name": "Truffle",
+  "species": "pig",
+  "user_id": 2,
+  "description": "Truffle is a pig with a nose for finding delicious treats.",
+  "price": 85,
+  "sold": false,
+  "image": "https://example.com/truffle.jpg"
+},
+{
+  "_id": {
+    "$oid": "6633e6f7d50486da592bbe5d"
+  },
+  "animal_id": 19,
+  "name": "Bessie",
+  "species": "cow",
+  "user_id": 3,
+  "description": "Bessie is a contented cow who enjoys lazy afternoons in the pasture.",
+  "price": 105.75,
+  "sold": false,
+  "image": "https://example.com/bessie.jpg"
+},
+{
+  "_id": {
+    "$oid": "66341f1f8ec32690556a6ddc"
+  },
+  "animal_id": 20,
+  "name": "Chad",
+  "species": "chicken",
+  "user_id": 4,
+  "description": "Chad is a fancy chicken with colorful plumage.",
+  "price": 27.5,
+  "sold": false,
+  "image": "https://example.com/Chad.jpg"
+}]

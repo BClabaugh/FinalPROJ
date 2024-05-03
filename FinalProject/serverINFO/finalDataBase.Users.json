@@ -1,0 +1,22 @@
+[{
+  "_id": {
+    "$oid": "6633dd92d50486da592bbe28"
+  },
+  "user_id": 1,
+  "first_name": "Zach",
+  "last_name": "Schmitz",
+  "password": "zach",
+  "phone_number": 1234567890,
+  "email": "zach@gmail.com"
+},
+{
+  "_id": {
+    "$oid": "6633dd92d50486da592bbe29"
+  },
+  "user_id": 2,
+  "first_name": "Zach",
+  "last_name": "Schmitz",
+  "password": "zach",
+  "phone_number": 1234567890,
+  "email": "zach@gmail.com"
+}]
