@@ -6,10 +6,11 @@
   "name": "Fluffy",
   "species": "sheep",
   "user_id": 1,
+  "username": "Zach Schmitz",
   "description": "Fluffy is a friendly sheep with soft wool.",
   "price": 50.01,
   "sold": false,
-  "image": "https://example.com/fluffy.jpg"
+  "image": "https://png.pngtree.com/png-clipart/20230529/original/pngtree-sheep-isolated-on-transparent-background-png-image_9173069.png"
 },
 {
   "_id": {
@@ -18,11 +19,12 @@
   "animal_id": 2,
   "name": "Bacon",
   "species": "pig",
-  "user_id": 2,
+  "user_id": 1,
+  "username": "Zach Schmitz",
   "description": "Bacon is a chubby pig who loves to roll in the mud.",
   "price": 70.5,
   "sold": false,
-  "image": "https://example.com/bacon.jpg"
+  "image": "https://www.deheuskidzz.com/siteassets/swine/deheuskidzz_pig_close-up_mouth-open_01_l.png?mode=crop&width=593"
 },
 {
   "_id": {
@@ -32,10 +34,11 @@
   "name": "Milkshake",
   "species": "cow",
   "user_id": 3,
+  "username": "Truman Patterson",
   "description": "Milkshake is a gentle cow with beautiful black and white patches.",
   "price": 100.25,
   "sold": false,
-  "image": "https://example.com/milkshake.jpg"
+  "image": "https://www.deheuskidzz.com/siteassets/cattle/deheuskidzz_cow_black_close-up_mouth-open_01_l.png?mode=crop&width=593"
 },
 {
   "_id": {
@@ -45,10 +48,11 @@
   "name": "Cluckers",
   "species": "chicken",
   "user_id": 4,
+  "username": "Anish Chanda",
   "description": "Cluckers is a lively chicken who lays delicious eggs every morning.",
   "price": 20.99,
   "sold": false,
-  "image": "https://example.com/cluckers.jpg"
+  "image": "https://static.wikia.nocookie.net/cswikia/images/e/e7/Chicken_WhiteBrown_2021_CSGO.png"
 },
 {
   "_id": {
@@ -58,10 +62,11 @@
   "name": "Wooly",
   "species": "sheep",
   "user_id": 1,
+  "username": "Zach Schmitz",
   "description": "Wooly is a fluffy sheep with a gentle disposition.",
   "price": 55.75,
   "sold": false,
-  "image": "https://example.com/wooly.jpg"
+  "image": "https://icons.iconarchive.com/icons/iconarchive/childrens-book-animals/512/Sheep-icon.png"
 },
 {
   "_id": {
@@ -71,10 +76,11 @@
   "name": "Porky",
   "species": "pig",
   "user_id": 2,
+  "username": "Blake Clabaugh",
   "description": "Porky is a playful pig who loves belly rubs.",
   "price": 65.99,
   "sold": false,
-  "image": "https://example.com/porky.jpg"
+  "image": "https://wholestonefarms.com/wp-content/uploads/2021/09/LWD-Pig-1024x723.png"
 },
 {
   "_id": {
@@ -84,10 +90,11 @@
   "name": "MooMoo",
   "species": "cow",
   "user_id": 3,
+  "username": "Truman Patterson",
   "description": "MooMoo is a curious cow who enjoys exploring the pasture.",
   "price": 90,
   "sold": false,
-  "image": "https://example.com/moomoo.jpg"
+  "image": "https://png.pngtree.com/png-clipart/20230411/original/pngtree-cow-white-cow-png-image_9044378.png"
 },
 {
   "_id": {
@@ -97,10 +104,11 @@
   "name": "Eggbert",
   "species": "chicken",
   "user_id": 4,
+  "username": "Anish Chanda",
   "description": "Eggbert is a proud rooster who crows at sunrise.",
   "price": 15.5,
   "sold": false,
-  "image": "https://example.com/eggbert.jpg"
+  "image": "https://www.deheuskidzz.com/siteassets/poultry/chicken-chefkok-whole-deheus-kidzz.png?mode=crop&width=593"
 },
 {
   "_id": {
@@ -110,10 +118,11 @@
   "name": "Snowball",
   "species": "sheep",
   "user_id": 1,
-  "description": "Snowball is a white sheep who loves frolicking in the snow.",
+  "username": "Zach Schmitz",
+  "description": "Snowball is a sheep who loves frolicking in the snow.",
   "price": 60.25,
   "sold": false,
-  "image": "https://example.com/snowball.jpg"
+  "image": "https://runescape.wiki/images/Sheep.png?9b03e"
 },
 {
   "_id": {
@@ -123,10 +132,11 @@
   "name": "Hamlet",
   "species": "pig",
   "user_id": 2,
+  "username": "Blake Clabaugh",
   "description": "Hamlet is a clever pig who enjoys solving puzzles.",
   "price": 75.75,
   "sold": false,
-  "image": "https://example.com/hamlet.jpg"
+  "image": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2F525008c/MediaObjects/41586_2015_Article_BF525008c_Figa_HTML.jpg"
 },
 {
   "_id": {
@@ -135,11 +145,12 @@
   "animal_id": 11,
   "name": "Buttercup",
   "species": "cow",
-  "user_id": 3,
+  "user_id": 2,
+  "username": "Blake Clabaugh",
   "description": "Buttercup is a gentle cow who loves being brushed.",
   "price": 110,
   "sold": false,
-  "image": "https://example.com/buttercup.jpg"
+  "image": "https://icow.tv/wp-content/uploads/2023/09/cow-VR.png"
 },
 {
   "_id": {
@@ -148,11 +159,12 @@
   "animal_id": 12,
   "name": "Peepers",
   "species": "chicken",
-  "user_id": 4,
+  "user_id": 1,
+  "username": "Zach Schmitz",
   "description": "Peepers is a small chicken with a big personality.",
   "price": 18.75,
   "sold": false,
-  "image": "https://example.com/peepers.jpg"
+  "image": "https://pngimg.com/d/chicken_PNG2145.png"
 },
 {
   "_id": {
@@ -162,10 +174,11 @@
   "name": "Cotton",
   "species": "sheep",
   "user_id": 1,
+  "username": "Zach Schmitz",
   "description": "Cotton is a fluffy sheep who loves cuddles.",
   "price": 45.5,
   "sold": false,
-  "image": "https://example.com/cotton.jpg"
+  "image": "https://images.squarespace-cdn.com/content/v1/5cabab54fb18207e8dbd12d4/1609962534066-N3OS9MT0CO3VKOMFTK6G/racka.png"
 },
 {
   "_id": {
@@ -175,10 +188,11 @@
   "name": "Sizzle",
   "species": "pig",
   "user_id": 2,
+  "username": "Blake Clabaugh",
   "description": "Sizzle is a sassy pig with a fiery personality.",
   "price": 80.25,
   "sold": false,
-  "image": "https://example.com/sizzle.jpg"
+  "image": "https://i.natgeofe.com/k/23e409f9-4699-46f0-a645-5cc1f5040363/pig-full-body_2x1.jpg"
 },
 {
   "_id": {
@@ -188,10 +202,11 @@
   "name": "Daisy",
   "species": "cow",
   "user_id": 3,
+  "username": "Truman Patterson",
   "description": "Daisy is a sweet cow who loves eating daisies.",
   "price": 95.5,
   "sold": false,
-  "image": "https://example.com/daisy.jpg"
+  "image": "https://static.vecteezy.com/system/resources/previews/022/130/368/original/white-female-cow-isolated-on-transparent-background-white-clipping-path-thai-cow-asian-cow-side-view-png.png"
 },
 {
   "_id": {
@@ -201,10 +216,11 @@
   "name": "Nugget",
   "species": "chicken",
   "user_id": 4,
+  "username": "Anish Chanda",
   "description": "Nugget is a plump chicken who enjoys sunbathing.",
   "price": 23.99,
   "sold": false,
-  "image": "https://example.com/nugget.jpg"
+  "image": "https://betterchickencommitment.com/img/WfQtYmIjx5-360.png"
 },
 {
   "_id": {
@@ -213,11 +229,12 @@
   "animal_id": 17,
   "name": "Fleece",
   "species": "sheep",
-  "user_id": 1,
+  "user_id": 3,
+  "username": "Truman Patterson",
   "description": "Fleece is a wooly sheep with a mischievous streak.",
   "price": 48.75,
   "sold": false,
-  "image": "https://example.com/fleece.jpg"
+  "image": "https://static.vecteezy.com/system/resources/previews/024/722/434/original/sheep-with-ai-generated-free-png.png"
 },
 {
   "_id": {
@@ -226,11 +243,12 @@
   "animal_id": 18,
   "name": "Truffle",
   "species": "pig",
-  "user_id": 2,
+  "user_id": 4,
+  "username": "Anish Chanda",
   "description": "Truffle is a pig with a nose for finding delicious treats.",
   "price": 85,
   "sold": false,
-  "image": "https://example.com/truffle.jpg"
+  "image": "https://kentfeeds.com/wp-content/uploads/ff-pig-illustration-1.png"
 },
 {
   "_id": {
@@ -239,11 +257,12 @@
   "animal_id": 19,
   "name": "Bessie",
   "species": "cow",
-  "user_id": 3,
+  "user_id": 2,
+  "username": "Blake Clabaugh",
   "description": "Bessie is a contented cow who enjoys lazy afternoons in the pasture.",
-  "price": 105.75,
+  "price": 100,
   "sold": false,
-  "image": "https://example.com/bessie.jpg"
+  "image": "https://cdn.wikimg.net/en/zeldawiki/images/thumb/6/61/OoT3D_Cow_Model.png/320px-OoT3D_Cow_Model.png"
 },
 {
   "_id": {
@@ -252,9 +271,10 @@
   "animal_id": 20,
   "name": "Chad",
   "species": "chicken",
-  "user_id": 4,
+  "user_id": 3,
+  "username": "Truman Patterson",
   "description": "Chad is a fancy chicken with colorful plumage.",
   "price": 27.5,
   "sold": false,
-  "image": "https://example.com/Chad.jpg"
+  "image": "https://i.imgur.com/w1Z4wdr.png"
 }]
