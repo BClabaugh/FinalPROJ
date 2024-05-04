@@ -196,6 +196,7 @@ app.post("/livestock", async (req, res) => {
         "name":req.body.name,
         "species":req.body.species,
         "user_id": req.body.user_id,
+        "username":req.body.username,
         "description":req.body.description,
         "price":newPrice,
         "sold": newSold,
@@ -244,10 +245,12 @@ app.put("/livestock/:id", async (req, res) => {
             "name":req.body.name,
             "species":req.body.species,
             "user_id": req.body.user_id,
+            "username":req.body.username,
             "description":req.body.description,
             "price":newPrice,
             "sold": newSold,
             "image":req.body.image
+            
           };
         console.log(updatedLS);
         const results = await db.collection("Livestock").updateOne(query, 
@@ -257,10 +260,12 @@ app.put("/livestock/:id", async (req, res) => {
                 name:updatedLS.name, 
                 species:updatedLS.species, 
                 user_id:updatedLS.user_id, 
+                username:updatedLS.username,
                 description:updatedLS.description, 
                 price:updatedLS.price,
                 sold:updatedLS.sold, 
                 image:updatedLS.image
+                
             }
         });
         res.status(200);
