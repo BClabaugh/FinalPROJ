@@ -234,21 +234,20 @@ app.put("/livestock/:id", async (req, res) => {
         const id = Number(req.params.id);
         await client.connect();
         const query = {"animal_id": id};
-        const values = Object.values(req.body);
         const newAnimalId = parseInt(req.body.animal_id);
         const newUserId = parseInt(req.body.user_id);
         const newPrice = parseFloat(req.body.price);
-        const newSold = req.body.sold === "true";
+       
 
         const updatedLS = {
             "animal_id": newAnimalId,
             "name":req.body.name,
             "species":req.body.species,
-            "user_id": req.body.user_id,
+            "user_id":newUserId,
             "username":req.body.username,
             "description":req.body.description,
             "price":newPrice,
-            "sold": newSold,
+            "sold": req.body.sold,
             "image":req.body.image
             
           };
